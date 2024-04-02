@@ -1,6 +1,6 @@
 <div style = "font-family: 'Open Sans', sans-serif; font-size: 16px">
 
-# ModuleVL6180
+# ModulePotentiometer
 
 <div style = "color: #555">
     <p align="center">
