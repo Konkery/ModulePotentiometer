@@ -1,9 +1,13 @@
+/**
+ * @class
+ * Класс реализует контроль над состоянием потенциометра
+ */
 class ClassPotentiometer extends ClassSensor {
     constructor(_opts) {
         ClassSensor.call(this, _opts);
         if (this._Pins.length < 1) throw new Error();
 
-        this._Channels[0].DataRefine.SetTransformFunc(100, 0);
+        // this._Channels[0].DataRefine.SetTransformFunc(100, 0);
         // this.Configure({ range: _opts.range || 100 }); 
     }
     Start(_chNum, _period) {
