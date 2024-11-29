@@ -29,14 +29,11 @@
 "12": {
     "pins": ["A3"],
     "name": "Potentiometer",
-    "article": "",
+    "article": "02-501-0103-201-0001",
     "type": "sensor",
     "channelNames": ["position"],
-    "typeInSignal": "analog",
-    "typeOutSignal": "digital",
     "quantityChannel": 1,
-    "busTypes": [],
-    "manufacturingData": {}
+    "modules": ["ModulePotentiometer.min.js"]
 }
 ```
 </div>
@@ -70,7 +67,7 @@
 //Создание объекта класса
 let pot = SensorManager.CreateDevice('12')[0];
 // Меняем диапазон на [0, 10]
-pot.DataRefine.SetTransformFunc(10, 0);
+pot.Transform.SetLinearFunc(10, 0);
 // Запускаем опрос 
 pot.Start();
 
